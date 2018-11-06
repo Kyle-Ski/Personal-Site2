@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Header, Image, Menu, Segment, Sidebar, Icon, Sticky } from 'semantic-ui-react'
 import Cards from './Cards'
+import ParallaxTest from '../ParallaxTest'
 
 const style ={
     card: {
@@ -14,27 +15,25 @@ const style ={
 class NavSideBar extends Component {
     
     state = { 
-        visible: false,
-        active: true
+        visible: false
     }
     
     handleHideClick = () => this.setState({ visible: false })
     handleShowClick = () => this.setState({ visible: true })
     handleSidebarHide = () => this.setState({ visible: false })
-    handleContextRef = contextRef => this.setState({ contextRef })
     handleToggle = () => this.setState({ active: !this.state.active })
 
 
     render() {
-        const { visible, active, contextRef } = this.state
+        const { visible, contexRef } = this.state
         return (
             <div>
-            <div ref={this.handleContextRef}>
-                <Sidebar.Pushable as={Segment}>
-        <Sticky context={contextRef}>
+            <div class="ui top fixed menu">
                 <Button color='black' style={style.card} onClick={this.handleShowClick}>
                     <Icon style={style.menu} name='bars' />
                 </Button>
+                </div>
+                <Sidebar.Pushable as={Segment}>
                 <Sidebar
                     as={Menu}
                     animation='overlay'
@@ -62,26 +61,13 @@ class NavSideBar extends Component {
                     <Icon name='angle double left' />
                 </Menu.Item>
                 </Sidebar>
-            </Sticky>
-        
+                
                 <Sidebar.Pusher dimmed={visible}>
                     <Segment basic>
-                        <Header as='h3'>Application Content</Header>
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />                   
+                    <ParallaxTest />
                     </Segment>
                 </Sidebar.Pusher>
                 </Sidebar.Pushable>
-                </div>
                 </div>
         )
     }

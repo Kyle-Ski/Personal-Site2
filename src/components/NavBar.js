@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Menu, Segment } from 'semantic-ui-react'
-
+import ParallaxTest from '../ParallaxTest'
 const style = {
     nav: {
         width: '100vw',

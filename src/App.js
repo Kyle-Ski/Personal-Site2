@@ -5,14 +5,14 @@ import NavBar from './components/NavBar'
 import Cards from './components/Cards'
 import NavSideBar from './components/NavSideBar'
 import { Responsive, Segment } from 'semantic-ui-react'
-
+import ParallaxTest from './ParallaxTest'
 const style ={
   card: {
     padding: '5vw'
   }
 }
 
-class App extends Component {
+class SecondApp extends Component {
   render() {
     return (
       <div>
@@ -22,25 +22,10 @@ class App extends Component {
       <Responsive maxWidth={767}>
       <NavSideBar />
       </Responsive>
-      <Responsive as={Segment} minWidth={768}>
-      <div className='page-body'>
-      
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      <Cards style={style.card}/>
-      </div>
-      </Responsive>
+      <ParallaxTest />
       </div>
     );
   }
 }
 
-export default App;
+export default SecondApp;
