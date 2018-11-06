@@ -4,7 +4,7 @@ import Cards from './Cards'
 
 const style ={
     card: {
-        padding: '5vw'
+        padding: 'vw'
         }
 }
     
@@ -21,14 +21,9 @@ class NavSideBar extends Component {
     
         return (
             <div>
-                <Button.Group>
                 <Button disabled={visible} onClick={this.handleShowClick}>
                     Show sidebar
                 </Button>
-                <Button disabled={!visible} onClick={this.handleHideClick}>
-                    Hide sidebar
-                </Button>
-                </Button.Group>
         
                 <Sidebar.Pushable as={Segment}>
                 <Sidebar
@@ -53,22 +48,25 @@ class NavSideBar extends Component {
                     <Icon name='camera' />
                     Channels
                     </Menu.Item>
+                    <Menu.Item disabled={!visible} onClick={this.handleHideClick}>
+                    Hide sidebar
+                </Menu.Item>
                 </Sidebar>
         
                 <Sidebar.Pusher dimmed={visible}>
                     <Segment basic>
                         <Header as='h3'>Application Content</Header>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>
-                        <Cards style={style.card}/>                   
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />
+                        <Cards />                   
                     </Segment>
                 </Sidebar.Pusher>
                 </Sidebar.Pushable>

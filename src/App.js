@@ -15,11 +15,11 @@ const style ={
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
       <Responsive as={Segment} minWidth={768}>
       <NavBar />
       </Responsive>
-      <Responsive as={Segment} maxWidth={767}>
+      <Responsive maxWidth={767}>
       <NavSideBar />
       </Responsive>
       <Responsive as={Segment} minWidth={768}>
