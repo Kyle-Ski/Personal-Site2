@@ -30,3 +30,29 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 300px){
+  .page-body {
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 700px){
+  .page-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 1000px){
+  .page-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30vh;
+  }
+}
