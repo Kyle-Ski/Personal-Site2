@@ -6,7 +6,7 @@ import ParallaxTest from '../ParallaxTest'
 const style ={
     card: {
         width: '100vw'
-        },
+    },
     menu: {
         float: 'left'
     }
@@ -32,6 +32,7 @@ class NavSideBar extends Component {
                 <Button color='black' style={style.card} onClick={this.handleShowClick}>
                     <Icon style={style.menu} name='bars' />
                 </Button>
+                
                 </div>
                 <Sidebar.Pushable as={Segment}>
                 <Sidebar
@@ -61,7 +62,6 @@ class NavSideBar extends Component {
                     <Icon name='angle double left' />
                 </Menu.Item>
                 </Sidebar>
-                
                 <Sidebar.Pusher dimmed={visible}>
                     <Segment basic>
                     <ParallaxTest />
