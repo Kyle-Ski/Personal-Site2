@@ -19,20 +19,23 @@ state = { activeItem: 'home' }
         <Segment inverted style={style.nav}>
             <Menu inverted pointing secondary>
             <Dropdown inverted item text='Categories'>
-      <Dropdown.Menu>
-        <Dropdown.Item>Electronics</Dropdown.Item>
-        <Dropdown.Item>Automotive</Dropdown.Item>
-        <Dropdown.Item>Home</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>            <Menu.Item
-                name='messages'
+            <Dropdown.Menu>
+                <Dropdown.Item>Electronics</Dropdown.Item>
+                <Dropdown.Item>Automotive</Dropdown.Item>
+                <Dropdown.Item>Home</Dropdown.Item>
+            </Dropdown.Menu>
+            </Dropdown>            
+            <Menu.Item
+                name='About Me'
                 active={activeItem === 'messages'}
                 onClick={this.handleItemClick}
+                href='#about-me'
             />
             <Menu.Item
-                name='friends'
+                name='Skills'
                 active={activeItem === 'friends'}
                 onClick={this.handleItemClick}
+                href='#skills'
             />
             </Menu>
         </Segment>

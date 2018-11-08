@@ -48,13 +48,13 @@ class NavSideBar extends Component {
                     width='wide'
                     position='fixed'  
                 >
-                    <Menu.Item as='a'>
+                    <Menu.Item as='a' href='#about-me'>
                     <Icon name='home' />
-                    Home
+                    About Me
                     </Menu.Item>
-                    <Menu.Item as='a'>
+                    <Menu.Item as='a' href='#skills'>
                     <Icon name='gamepad' />
-                    Games
+                    Skills
                     </Menu.Item>
                     <Menu.Item as='a'>
                     <Icon name='camera' />
@@ -66,9 +66,7 @@ class NavSideBar extends Component {
                 </Menu.Item>
                 </Sidebar>
                 <Sidebar.Pusher dimmed={visible}>
-                    <Segment basic>
                     <ParallaxTest />
-                    </Segment>
                 </Sidebar.Pusher>
                 </Sidebar.Pushable>
                 </div>

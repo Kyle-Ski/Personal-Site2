@@ -16,13 +16,13 @@ class SecondApp extends Component {
   render() {
     return (
       <div>
-      <Responsive as={Segment} minWidth={768}>
+      <Responsive minWidth={768}>
       <NavBar />
+      <ParallaxTest />
       </Responsive>
       <Responsive maxWidth={767}>
       <NavSideBar />
       </Responsive>
-      <ParallaxTest />
       </div>
     );
   }
