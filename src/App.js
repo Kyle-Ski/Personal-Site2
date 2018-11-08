@@ -5,7 +5,7 @@ import NavBar from './components/NavBar'
 import Cards from './components/Cards'
 import NavSideBar from './components/NavSideBar'
 import { Responsive, Segment } from 'semantic-ui-react'
-import ParallaxTest from './ParallaxTest'
+import ParallaxTest from './components/ParallaxTest'
 const style ={
   card: {
     padding: '5vw'

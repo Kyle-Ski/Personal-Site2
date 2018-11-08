@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax } from "react-parallax";
 import { Responsive, Segment } from 'semantic-ui-react'
+import TechCards from './TechCards';
 const styles = {
     fontFamily: "sans-serif",
     textAlign: "center"
@@ -8,6 +9,9 @@ const styles = {
 const style = {
     innerParallax: {
         minHeight: '50vh'
+    }, 
+    list: {
+        listStyle: 'none'
     }
 }
 const insideStyles = {
@@ -18,31 +22,33 @@ const insideStyles = {
     left: "50%",
     transform: "translate(-50%,-50%)"
 };
-const image1 =
-    "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
-const image2 =
-    "https://img00.deviantart.net/2bd0/i/2009/276/c/9/magic_forrest_wallpaper_by_goergen.jpg";
+const image1 = require('./img/Massive_me.jpg')
+const image2 = require('./img/elbertTop.jpg')
 const image3 =
     "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
 const image4 =
     "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
-
+const image5 = require('./img/knexBackend.png')
 const ParallaxTest = () => (
     <div >
     <div style={styles}>
-        <Parallax bgImage={image1} strength={500}>
+        <Parallax bgImage={image2} strength={500}>
         <div style={{ height: 500 }}>
             <div style={insideStyles}>HTML inside the parallax
             </div>
         </div>
         </Parallax>
         <h1 style={style.innerParallax}>| | |</h1>
-        <Parallax bgImage={image3} blur={{ min: -1, max: 3 }}>
+        <Parallax bgImage={image5} strength={500}>
         <div style={{ height: 500 }}>
             <div style={insideStyles}>Dynamic Blur</div>
         </div>
         </Parallax>
-        <h1 style={style.innerParallax}>| | |</h1>
+        <div className="technologies" style={style.innerParallax}>
+            <ul style={style.list}>
+               <TechCards />
+            </ul>
+        </div>
         <Parallax bgImage={image2} strength={500}>
         <div style={{ height: 500 }}>
             <div style={insideStyles}>Reverse direction</div>
