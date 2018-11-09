@@ -1,7 +1,8 @@
 import React from 'react';
 import { Parallax } from "react-parallax";
-import { Responsive, Embed, Header, Image, Divider } from 'semantic-ui-react'
+import { Responsive, Card, Header, Image, Divider } from 'semantic-ui-react'
 import TechCards from './TechCards';
+import Projects from './Projects';
 const styles = {
     fontFamily: "sans-serif",
     textAlign: "center"
@@ -75,7 +76,9 @@ const ParallaxTest = () => (
             <Header style={insideStyles}>Projects</Header>
         </div>
         </Parallax>
-        <h1 style={style.innerParallax}>| | |</h1>
+        <Card.Group>
+        <Projects />
+        </Card.Group>
         <Parallax
             bgImage={image4}
             strength={500}
