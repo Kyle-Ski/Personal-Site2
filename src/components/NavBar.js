@@ -15,7 +15,7 @@ state = { activeItem: 'home' }
         const { activeItem } = this.state
 
         return (
-    <div class="ui top fixed menu">
+    <div className="ui top fixed menu">
         <Segment inverted style={style.nav}>
             <Menu inverted pointing secondary>
             <Dropdown inverted item text='Categories'>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Parallax } from "react-parallax";
-import { Responsive, Icon, Header, Image, Divider } from 'semantic-ui-react'
+import { Responsive, Embed, Header, Image, Divider } from 'semantic-ui-react'
 import TechCards from './TechCards';
+import Pdf from './Pdf'
 const styles = {
     fontFamily: "sans-serif",
     textAlign: "center"
@@ -88,7 +89,6 @@ const ParallaxTest = () => (
         </div>
         </Parallax>
         <div style={{ height: 500 }} />
-        <Icon placeholder='/LeafBuyer\ Resume.pdf' src='/LeafBuyer\ Resume.pdf' width='200px' height='300px'></Icon>
     </div>
     </div>
 );
