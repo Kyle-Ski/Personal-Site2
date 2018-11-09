@@ -2,7 +2,6 @@ import React from 'react';
 import { Parallax } from "react-parallax";
 import { Responsive, Embed, Header, Image, Divider } from 'semantic-ui-react'
 import TechCards from './TechCards';
-import Pdf from './Pdf'
 const styles = {
     fontFamily: "sans-serif",
     textAlign: "center"
@@ -23,8 +22,18 @@ const insideStyles = {
     left: "50%",
     transform: "translate(-50%,-50%)",
     borderRadius: "15px",
-    fontSize: "50px"
-
+    fontSize: "50px",
+};
+const SkillStyles = {
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    padding: 50,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+    borderRadius: "15px",
+    fontSize: "50px",
+    color: 'white'
 };
 const image1 = '/img/Massive_me.jpg'
 const image2 = '/img/elbertTop.jpg'
@@ -45,7 +54,7 @@ const ParallaxTest = () => (
         <h1 style={style.innerParallax}>| | |</h1>
         <Parallax bgImage={image5} strength={500}>
         <div style={{ height: 500 }}>
-            <Header style={insideStyles}>Dynamic Blur</Header>
+            <Header style={SkillStyles}>Skills</Header>
         </div>
         </Parallax>
         <div id='skills' style={style.innerParallax}>
@@ -58,36 +67,33 @@ const ParallaxTest = () => (
             <Divider />
             <Divider />
         </div>
-        <Parallax bgImage={image2} strength={500}>
+        <Parallax 
+            bgImage={image2} 
+            strength={500}
+        >
         <div style={{ height: 500 }}>
-            <Header style={insideStyles}>Reverse direction</Header>
+            <Header style={insideStyles}>Projects</Header>
         </div>
         </Parallax>
         <h1 style={style.innerParallax}>| | |</h1>
         <Parallax
-        bgImage={image4}
-        strength={200}
-        renderLayer={percentage => (
-            <div>
-            <div
-                style={{
-                position: "absolute",
-                background: `rgba(255, 125, 0, ${percentage * 1})`,
-                left: "50%",
-                top: "50%",
-                borderRadius: "50%",
-                transform: "translate(-50%,-50%)",
-                width: percentage * 500,
-                height: percentage * 500
-                }}
-            />
-            </div>
-        )}
+            bgImage={image4}
+            strength={500}
         >
         <div style={{ height: 500 }}>
             <Header style={insideStyles}>renderProp</Header>
         </div>
         </Parallax>
+        <Divider />
+        <Responsive minWidth={768}>
+        <iframe src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="700px" width="75%" backgroundColor="white"></iframe>
+        </Responsive>
+
+        <Responsive maxWidth={767}>
+        <iframe src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="350px" width="75%" backgroundColor="white"></iframe>
+        </Responsive>
+        <Divider />
+
         <div style={{ height: 500 }} />
     </div>
     </div>

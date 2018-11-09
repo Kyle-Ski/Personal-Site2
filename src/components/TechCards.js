@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, Image} from 'semantic-ui-react'
+import { Label, Image} from 'semantic-ui-react'
 const bootstrap = {name : 'Bootstrap 3 & 4', img: '/img/Bootstrap-Logo.png', icon: 'tv', description: 'Front-End'}
 const css = {name: 'CSS3', img: '/img/CSS3-Logo.png', icon: 'css3 alternate', description: 'Front-End'}
 const git = {name: 'Git', img: '/img/Git-Logo.png', icon: 'github square', description: 'Front/Back-End'}
@@ -23,27 +23,17 @@ const style = {
 }
 
 const TechCards = () => (
-    logos.map(logo => {
+    logos.map((logo, i) => {
         return (
-            <Image src={logo.img} alt={logo.name}/>
+            <Image 
+                className='image' 
+                key={i} 
+                src={logo.img} 
+                alt={logo.name}
+            />
         )
     })
 )
 
 export default TechCards
 
-{/* <Card color='green'>
-<Card.Content>
-    <Card.Header >{logo.name}</Card.Header>
-    </Card.Content>
-    <Card.Content style={style.extra}>
-    <Image style={style.img} src={logo.img}/>
-    </Card.Content>
-    <Card.Content style={style.extra}>
-    </Card.Content>
-    <Card.Content  extra>
-   
-        {logo.description}
-    
-    </Card.Content>
-</Card> */}

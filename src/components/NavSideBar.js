@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Header, Image, Menu, Segment, Sidebar, Icon, Sticky } from 'semantic-ui-react'
-import Cards from './Cards'
-import ParallaxTest from './ParallaxTest'
+import ParallaxContent from './ParallaxContent'
 
 const style ={
     card: {
@@ -66,7 +65,7 @@ class NavSideBar extends Component {
                 </Menu.Item>
                 </Sidebar>
                 <Sidebar.Pusher dimmed={visible}>
-                    <ParallaxTest />
+                    <ParallaxContent />
                 </Sidebar.Pusher>
                 </Sidebar.Pushable>
                 </div>
