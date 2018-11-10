@@ -58,7 +58,7 @@ const ParallaxTest = () => (
             <h1 style={style.innerParallax}>| | |</h1>
             <Parallax bgImage={image4} strength={500}>
                 <div style={{ height: 500 }}>
-                    <Header>Skills</Header>
+                    <Header style={insideStyles}>Skills</Header>
                 </div>
             </Parallax>
             <div id='skills' style={style.innerParallax}>
