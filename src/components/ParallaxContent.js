@@ -12,8 +12,10 @@ const style = {
         minHeight: '50vh',
     }, 
     list: {
-        // listStyle: 'none',
-        display: 'inline'
+        backgroundColor: 'black',
+        width: '100vw',
+        height: '15vh',
+        padding: '20px'
     }
 }
 const insideStyles = {
@@ -96,11 +98,11 @@ const ParallaxTest = () => (
         <iframe src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="500px" width="100%" backgroundColor="white"></iframe>
         </Responsive>
         <Divider />
-        <List horizontal>
-            <List.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'><Icon name='linkedin' size='huge'/></List.Item>
-            <List.Item as='a' href='https://github.com/Kyle-Ski'><Icon name='github' size='huge' /></List.Item>
-            <List.Item as='a' href='mailto:skiroyjenkins@gmail.com'><Icon name='mail' size='huge' /></List.Item>
-            <List.Item as='a' href='tel: +1-303-374-4256'><Icon name='phone' size='huge' /></List.Item>
+        <List style={style.list} horizontal>
+            <List.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'><Icon className='contactIcon' color='grey' name='linkedin' size='huge'/></List.Item>
+            <List.Item as='a' href='https://github.com/Kyle-Ski'><Icon className='contactIcon' color='grey' name='github' size='huge' /></List.Item>
+            <List.Item as='a' href='mailto:skiroyjenkins@gmail.com'><Icon className='contactIcon' color='grey' name='mail' size='huge' /></List.Item>
+            <List.Item as='a' href='tel: +1-303-374-4256'><Icon className='contactIcon' color='grey' name='phone' size='huge' /></List.Item>
         </List>
 
         <div style={{ height: 10 }} />

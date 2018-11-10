@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Icon, Image, Reveal } from 'semantic-ui-react'
 
 const beers = {creation: 'October 2018', img: '/img/Beers.png', name: 'Full CRUD Beer Review App', url: 'https://warm-garden-50264.herokuapp.com/', gitHub: 'https://github.com/Kyle-Ski/College-database-Front-End', description: 'A full CRUD front end React app that uses Semantic-Ui. It connects to a back end PostgreSQL database and Knex RESTful server. Technologies: Semantic-Ui React, React, PostgreSQL, Knex.js.'}
 const bookStore = {creation: 'September 2018', img: '/img/Bookstore.png', name: 'React Bookstore', url: 'http://greedy-drink.surge.sh/', gitHub: 'https://github.com/Kyle-Ski/Bookstore', description: 'My first React App. Created to work like a shopping cart for a bookstore with search functionality. Technologies: React, CSS, JavaScript, HTML'}
