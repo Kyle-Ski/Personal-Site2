@@ -3,6 +3,10 @@ import { Menu, Segment, Dropdown, Icon } from 'semantic-ui-react'
 const style = {
     nav: {
         width: '100vw',
+        borderBottom: 'solid darkgreen 6px'
+    },
+    name: {
+        fontSize: '4vh'
     }
 }
 
@@ -17,7 +21,7 @@ state = { activeItem: 'home' }
         return (
     <div className="ui top fixed menu">
         <Segment inverted style={style.nav}>
-            <Menu inverted>
+            <Menu massive inverted>
             <Menu.Item
                 name='About Me'
                 active={activeItem === 'About Me'}
@@ -50,7 +54,12 @@ state = { activeItem: 'home' }
                 <Dropdown.Item href="tel: +1-303-374-4256"><Icon name='phone'/>Cell Phone</Dropdown.Item>
 
             </Dropdown.Menu>
-            </Dropdown>            
+            </Dropdown>  
+            <Menu.Item
+            style={style.name}
+            position='right'
+            name='Kyle Czajkowski' 
+            />
             </Menu>
         </Segment>
     </div>
