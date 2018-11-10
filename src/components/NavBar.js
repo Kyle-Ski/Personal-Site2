@@ -36,6 +36,12 @@ state = { activeItem: 'home' }
                 onClick={this.handleItemClick}
                 href='#projects'
             />
+            <Menu.Item
+                name='Resume'
+                active={activeItem === 'Resume'}
+                onClick={this.handleItemClick}
+                href='#resume'
+            />
             <Dropdown inverted item text='Contact'>
             <Dropdown.Menu>
                 <Dropdown.Item href='https://github.com/Kyle-Ski'><Icon name='github'/>GitHub</Dropdown.Item>
