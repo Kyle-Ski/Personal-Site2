@@ -4,13 +4,14 @@ import ParallaxContent from './ParallaxContent'
 
 const style ={
     card: {
-        width: '100vw'
+        width: '100vw',
+        borderBottom: 'solid darkgreen 6px'
     },
     menu: {
         float: 'left'
     }, 
     side: {
-        transform: 'none'
+        borderBottom: 'solid darkgreen 6px'
     }
 }
     
@@ -42,7 +43,8 @@ class NavSideBar extends Component {
                         vertical
                         visible={visible}
                         width='wide'
-                        position='fixed'  
+                        position='fixed' 
+                        style={style.side}
                     >
                             <Menu.Item as='a' href='#about-me'>
                                 <Icon name='vcard' />
