@@ -29,7 +29,7 @@ const insideStyles = {
     borderRadius: "15px",
     fontSize: "50px",
 };
-const SkillStyles = {
+const skillStyles = {
     backgroundColor: "rgba(0, 0, 0, 0.2)",
     padding: 50,
     position: "absolute",
@@ -42,10 +42,8 @@ const SkillStyles = {
 };
 const image1 = '/img/Massive_me.jpg'
 const image2 = '/img/elbertTop.jpg'
-const image3 =
-    "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
-const image4 =
-    "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
+const image3 = '/img/greenMountains.jpg';
+const image4 = '/img/mountainPath.jpg'
 const image5 = '/img/knexBackend.png'
 const ParallaxTest = () => (
     <div >
@@ -57,9 +55,9 @@ const ParallaxTest = () => (
                 </div>
             </Parallax>
             <h1 style={style.innerParallax}>| | |</h1>
-            <Parallax bgImage={image5} strength={500}>
+            <Parallax bgImage={image4} strength={500}>
                 <div style={{ height: 500 }}>
-                    <Header style={SkillStyles}>Skills</Header>
+                    <Header>Skills</Header>
                 </div>
             </Parallax>
             <div id='skills' style={style.innerParallax}>
@@ -67,30 +65,30 @@ const ParallaxTest = () => (
                 <Divider />
                 <Header as='h1' dividing>Skills</Header>
                 <Image.Group size='small'>
-                    <TechCards style='padding: 10px;'/>
+                    <TechCards />
                 </Image.Group>
                 <Divider />
                 <Divider />
             </div>
-            <Parallax bgImage={image2} strength={500}>
+            <Parallax bgImage={image5} strength={500}>
                 <div style={{ height: 500 }}>
-                    <Header style={insideStyles}>Projects</Header>
+                    <Header style={skillStyles}>Projects</Header>
                 </div>
             </Parallax>
             <Card.Group id='projects' centered>
                 <Projects />
             </Card.Group>
-            <Parallax bgImage={image4} strength={500}>
+            <Parallax bgImage={image3} strength={500}>
                 <div style={{ height: 500 }}>
                     <Header style={insideStyles}>Resume</Header>
                 </div>
             </Parallax>
             <Divider />
             <Responsive minWidth={768}>
-                <iframe id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="700px" width="75%" backgroundColor="white"></iframe>
+                <iframe title='desktop' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="700px" width="75%"></iframe>
             </Responsive>
             <Responsive maxWidth={767}>
-                <iframe id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="500px" width="100%" backgroundColor="white"></iframe>
+                <iframe title='smaller' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="500px" width="100%"></iframe>
             </Responsive>
             <Divider />
             <List style={style.list} horizontal>

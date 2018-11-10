@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Icon, Image, Reveal } from 'semantic-ui-react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 import projects from '../data/projectsData'
 
 const style = {
