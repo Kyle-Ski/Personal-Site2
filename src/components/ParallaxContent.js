@@ -46,8 +46,8 @@ const image5 = '/img/knexBackend.png'
 const ParallaxTest = () => (
     <div >
     <div style={styles}>
-        <Parallax bgImage={image2} strength={500}>
-        <div id='about-me' style={{ height: 500 }}>
+        <Parallax bgImage={image2} strength={600}>
+        <div id='about-me' style={{ height: '90vh' }}>
             <Header as='h1' style={insideStyles} dividing>Kyle Czajkowski
             </Header>
         </div>
@@ -76,7 +76,7 @@ const ParallaxTest = () => (
             <Header style={insideStyles}>Projects</Header>
         </div>
         </Parallax>
-        <Card.Group>
+        <Card.Group id='projects' centered>
         <Projects />
         </Card.Group>
         <Parallax

@@ -27,6 +27,13 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.ui.cards>.card {
+  transition: transform .2s;
+  margin: 30px;
+}
+.hover:hover {
+  transform: scale(1.1);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
