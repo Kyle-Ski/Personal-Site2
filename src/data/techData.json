@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Bootstrap 3 & 4", 
+        "img": "/img/Bootstrap-Logo.png", 
+        "icon": "tv", 
+        "description": "Front-End"
+    },
+    {
+        "name": "CSS3", 
+        "img": "/img/CSS3-Logo.png", 
+        "icon": "css3 alternate", 
+        "description": "Front-End"
+    },
+    {
+        "name": "Git", 
+        "img": "/img/Git-Logo.png", 
+        "icon": "github square", 
+        "description": "Front/Back-End"
+    },
+    {
+        "name": "Heroku", 
+        "img": "/img/Heroku-Logo.png", 
+        "icon": "tv", 
+        "description": "Back-End"
+    },
+    {
+        "name": "HTML5", 
+        "img": "/img/HTML5-Logo.png", 
+        "icon": "html5", 
+        "description": "Front-End"
+    },
+    {
+        "name": "JavaScript", 
+        "img": "/img/JavaScript-Logo.jpg", 
+        "icon": "js square", 
+        "description": "Front/back"
+    },
+    {
+        "name": "Knex.js", 
+        "img": "/img/KnexJs-Logo.png", 
+        "icon": "server", 
+        "description": "Back-End"
+    },
+    {
+        "name": "Node.js", 
+        "img": "/img/NodeJs-Logo.png", 
+        "icon": "server", 
+        "description": "Back-End"
+    },
+    {
+        "name": "PostgreSQL", 
+        "img": "/img/PostgreSQL-Logo.png", 
+        "icon": "server", 
+        "description": "Back-End"
+    },
+    {
+        "name": "React", 
+        "img": "/img/React-Logo.png", 
+        "icon": "react", 
+        "description": "Front-End"
+    },
+    {
+        "name": "RESTful API", 
+        "img": "/img/RestAPI-Logo.png", 
+        "icon": "server", 
+        "description": "Back-End"}
+]
