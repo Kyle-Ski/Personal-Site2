@@ -17,7 +17,7 @@ state = { activeItem: 'home' }
         return (
     <div className="ui top fixed menu">
         <Segment inverted style={style.nav}>
-            <Menu inverted pointing secondary>
+            <Menu inverted>
             <Menu.Item
                 name='About Me'
                 active={activeItem === 'About Me'}
