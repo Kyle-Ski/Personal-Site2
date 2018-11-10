@@ -27,7 +27,7 @@ class NavSideBar extends Component {
     render() {
         const { visible } = this.state
         return (
-            <div >              
+            <div>              
                 <Sidebar.Pushable as={Segment}>
                     <Button color='black' style={style.card} onClick={this.state.visible ? this.handleHideClick : this.handleShowClick}>
                         <Icon style={style.menu} name='bars' />

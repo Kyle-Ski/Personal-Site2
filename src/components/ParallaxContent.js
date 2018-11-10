@@ -16,7 +16,8 @@ const style = {
         backgroundColor: 'black',
         width: '100vw',
         height: '15vh',
-        padding: '20px'
+        padding: '20px',
+        borderTop: 'solid darkgreen 6px'
     }
 }
 const insideStyles = {
