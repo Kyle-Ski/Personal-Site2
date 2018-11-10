@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from "react-parallax";
-import { Responsive, Card, Header, Image, Divider } from 'semantic-ui-react'
+import { Responsive, Card, Header, Image, Divider, Icon, List } from 'semantic-ui-react'
 import TechCards from './TechCards';
 import Projects from './Projects';
 const styles = {
@@ -12,7 +12,8 @@ const style = {
         minHeight: '50vh',
     }, 
     list: {
-        listStyle: 'none'
+        // listStyle: 'none',
+        display: 'inline'
     }
 }
 const insideStyles = {
@@ -91,13 +92,18 @@ const ParallaxTest = () => (
         <Responsive minWidth={768}>
         <iframe src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="700px" width="75%" backgroundColor="white"></iframe>
         </Responsive>
-
         <Responsive maxWidth={767}>
-        <iframe src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="350px" width="75%" backgroundColor="white"></iframe>
+        <iframe src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/b73cee08b92de65e80aac3114010a418efc1b5c7/public/img/LeafBuyer%20Resume.pdf&embedded=true" height="500px" width="100%" backgroundColor="white"></iframe>
         </Responsive>
         <Divider />
+        <List horizontal>
+            <List.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'><Icon name='linkedin' size='huge'/></List.Item>
+            <List.Item as='a' href='https://github.com/Kyle-Ski'><Icon name='github' size='huge' /></List.Item>
+            <List.Item as='a' href='mailto:skiroyjenkins@gmail.com'><Icon name='mail' size='huge' /></List.Item>
+            <List.Item as='a' href='tel: +1-303-374-4256'><Icon name='phone' size='huge' /></List.Item>
+        </List>
 
-        <div style={{ height: 500 }} />
+        <div style={{ height: 10 }} />
     </div>
     </div>
 );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Header, Image, Menu, Segment, Sidebar, Icon, Sticky } from 'semantic-ui-react'
+import { Button, Header, Image, Menu, Segment, Sidebar, Icon } from 'semantic-ui-react'
 import ParallaxContent from './ParallaxContent'
 
 const style ={
@@ -48,16 +48,32 @@ class NavSideBar extends Component {
                     position='fixed'  
                 >
                     <Menu.Item as='a' href='#about-me'>
-                    <Icon name='home' />
+                    <Icon name='vcard' />
                     About Me
                     </Menu.Item>
                     <Menu.Item as='a' href='#skills'>
-                    <Icon name='gamepad' />
+                    <Icon name='js square' />
                     Skills
                     </Menu.Item>
-                    <Menu.Item as='a'>
-                    <Icon name='camera' />
-                    Channels
+                    <Menu.Item as='a' href='#projects'>
+                    <Icon name='code' />
+                    Projects
+                    </Menu.Item>
+                    <Menu.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'>
+                    <Icon name='linkedin' />
+                    LinkedIn
+                    </Menu.Item>
+                    <Menu.Item as='a' href='https://github.com/Kyle-Ski'>
+                    <Icon name='github' />
+                    GitHub
+                    </Menu.Item>
+                    <Menu.Item as='a' href="mailto:skiroyjenkins@gmail.com">
+                    <Icon name='mail' />
+                    Email
+                    </Menu.Item>
+                    <Menu.Item as='a' href="tel: +1-303-374-4256">
+                    <Icon name='phone' />
+                    Cell Phone
                     </Menu.Item>
                     
                     <Menu.Item disabled={!visible} onClick={this.handleHideClick}>
