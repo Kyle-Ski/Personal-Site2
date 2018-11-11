@@ -41,10 +41,9 @@ const skillStyles = {
     fontSize: "50px",
     color: 'white'
 };
-const image1 = '/img/Massive_me.jpg'
 const image2 = '/img/elbertTop.jpg'
 const image3 = '/img/greenMountains.jpg';
-const image4 = '/img/mountainPath.jpg'
+const image4 = '/img/theSpot.jpg'
 const image5 = '/img/knexBackend.png'
 const headshot = '/img/Profile.jpg'
 const ParallaxTest = () => (
@@ -84,7 +83,7 @@ const ParallaxTest = () => (
             </Container>
             <Parallax bgImage={image4} strength={500}>
                 <div style={{ height: 500 }}>
-                    <Header style={insideStyles}>Skills</Header>
+                    <Header style={skillStyles}>Skills</Header>
                 </div>
             </Parallax>
             <div id='skills' style={style.innerParallax}>
