@@ -37,7 +37,7 @@
     },
     {
         "name": "Knex.js", 
-        "img": "/img/KnexJs-Logo.png", 
+        "img": "/img/KnexJS-Logo.png", 
         "icon": "server", 
         "description": "Back-End"
     },
