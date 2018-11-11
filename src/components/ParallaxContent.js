@@ -18,9 +18,6 @@ const style = {
         height: '15vh',
         padding: '20px',
         borderTop: 'solid darkgreen 6px'
-    },
-    profile: {
-        display: 'flex'
     }
 }
 const insideStyles = {
@@ -61,8 +58,8 @@ const ParallaxTest = () => (
             </Parallax>
             <Container className='about-me' textAlign='justified'>
                 <Header as='h1'>Full-Stack Engineer</Header>
-                <div style={style.profile}>
-                <Image size='small' src={headshot}/>
+                <div className='profile'>
+                <Image size='medium' src={headshot} />
                 <div className='paragraphs'>
                 <p>
                     My passion in life has always been learning new skills and exploring alluring places. 
