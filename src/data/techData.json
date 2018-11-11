@@ -43,7 +43,7 @@
     },
     {
         "name": "Node.js", 
-        "img": "/img/NodeJs-Logo.png", 
+        "img": "/img/NodeJS-Logo.png", 
         "icon": "server", 
         "description": "Back-End"
     },
