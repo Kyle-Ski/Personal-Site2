@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from "react-parallax";
-import { Responsive, Card, Header, Image, Divider, Icon, List } from 'semantic-ui-react'
+import { Responsive, Card, Header, Image, Divider, Icon, List, Container } from 'semantic-ui-react'
 import TechCards from './TechCards';
 import Projects from './Projects';
 
@@ -18,6 +18,9 @@ const style = {
         height: '15vh',
         padding: '20px',
         borderTop: 'solid darkgreen 6px'
+    },
+    profile: {
+        display: 'flex'
     }
 }
 const insideStyles = {
@@ -46,16 +49,42 @@ const image2 = '/img/elbertTop.jpg'
 const image3 = '/img/greenMountains.jpg';
 const image4 = '/img/mountainPath.jpg'
 const image5 = '/img/knexBackend.png'
+const headshot = '/img/Profile.jpg'
 const ParallaxTest = () => (
     <div >
         <div style={styles}>
             <Parallax bgImage={image2} strength={600}>
                 <div id='about-me' style={{ height: '90vh' }}>
-                    <Header as='h1' style={insideStyles} dividing>Kyle Czajkowski
+                    <Header as='h1' style={insideStyles} dividing>About Me
                     </Header>
                 </div>
             </Parallax>
-            <h1 style={style.innerParallax}>| | |</h1>
+            <Container className='about-me' textAlign='justified'>
+                <Header as='h1'>Full-Stack Engineer</Header>
+                <div style={style.profile}>
+                <Image size='small' src={headshot}/>
+                <div className='paragraphs'>
+                <p>
+                    My passion in life has always been learning new skills and exploring alluring places. 
+                    To me happiness is constantly engaging in activities that keep me in motion towards a 
+                    better future. My choice enroll in the Web Development immersive at Galvanize is the 
+                    next step to make a better life for my future self.
+                </p> 
+                <p>
+                    Becoming a Full-Stack Developer will allow me to pursue my love of problem solving, 
+                    experimenting, improvement of my work and myself. As such, I am excited to see what kind 
+                    of jobs are available with my known and unknown development skills. During the program, I 
+                    plan on searching for a full-stack development career in the greater Denver Metro area while 
+                    being open to change. 
+                </p>
+                <p>
+                    While I am not at school and at home, I enjoy learning the Guitar, playing board 
+                    games, and reading. When I have more time to myself I love to spend time outdoors 
+                    backpacking, hiking, climbing 14er's, and skiing.
+                </p>
+                </div>
+                </div>
+            </Container>
             <Parallax bgImage={image4} strength={500}>
                 <div style={{ height: 500 }}>
                     <Header style={insideStyles}>Skills</Header>

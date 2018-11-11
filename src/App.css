@@ -62,18 +62,19 @@
   transform: scale(1.5);
 }
 
-.letstry {
-  z-index: 9999;
-  position: fixed;
-  top:0px;
-  width: 100%;
-  box-shadow: 0 0 3px #b4b4b4;
-  transition: all ease-out 0.5s;
-  -webkit-transition: all ease-out 0.5s;
+.about-me {
+  padding: 40px;
 }
 
 .myName {
   float: right;
+}
+
+
+
+.paragraphs {
+  padding: 20px;
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
@@ -97,6 +98,12 @@
     width: auto;
     height: auto;
   }
+
+  .ui.small.image{
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
 }
 
 @media (min-width: 700px){
@@ -111,6 +118,12 @@
     width: auto;
     height: auto;
   }
+
+  .ui.small.image{
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
 }
 
 @media (min-width: 900px){
@@ -120,6 +133,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 0vh;
+  }
+
+  .ui.small.image{
+    width: auto;
+    height: auto;
+    padding: 20px;
   }
 }
 
@@ -131,8 +150,36 @@
     justify-content: center;
     margin-top: 20vh;
   }
+
   .ui.cards>.card {
     width: 30vw;
     height: auto;
+  }
+
+  .ui.small.image{
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1300px){
+  .page-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20vh;
+  }
+
+  .ui.cards>.card {
+    width: 30vw;
+    height: auto;
+  }
+
+  .ui.small.image{
+    width: auto;
+    height: auto;
+    padding: 20px;
   }
 }
