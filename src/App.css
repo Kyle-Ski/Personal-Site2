@@ -1,25 +1,10 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+.main {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
 .technologies {
@@ -70,6 +55,11 @@
   float: right;
 }
 
+.ui.medium.image{
+  border-radius: 5%;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -87,6 +77,10 @@
     padding: 13vw;
   }
 
+  .about-me {
+    padding: 15px;
+  }
+
   .hover {
     width: auto;
     height: auto;
@@ -96,16 +90,22 @@
     max-width: 100%;
     height: 100%;
     padding: 10px;
+    align-self: center;
+    border-radius: 5%;
   }
 
   .paragraphs {
-    padding: 10px;
-    font-size: large;
+    padding: 1px;
+    font-size: x-large;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   }
 
   .profile {
     display: flex;
     flex-direction: column;
+  }
+h1.ui.header {
+    text-align: center;
   }
 }
 
@@ -125,7 +125,7 @@
 
   .paragraphs {
     padding: 20px;
-    font-size: small;
+    font-size: medium;
   }
 
   .profile {
@@ -145,7 +145,7 @@
 
   .paragraphs {
     padding: 20px;
-    font-size: medium;
+    font-size: large;
   }
 
   .profile {

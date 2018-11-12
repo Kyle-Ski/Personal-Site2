@@ -5,7 +5,8 @@ import ParallaxContent from './ParallaxContent'
 const style ={
     card: {
         width: '100vw',
-        borderBottom: 'solid darkgreen 6px'
+        borderBottom: 'solid darkgreen 6px',
+        height: '10vh'
     },
     menu: {
         float: 'left'

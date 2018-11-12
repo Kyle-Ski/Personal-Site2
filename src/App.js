@@ -9,7 +9,7 @@ import ParallaxContent from './components/ParallaxContent'
 class SecondApp extends Component {
   render() {
     return (
-      <div>
+      <div className='main'>
         <Responsive minWidth={768}>
           <NavBar />
           <ParallaxContent />
