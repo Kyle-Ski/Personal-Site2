@@ -118,8 +118,8 @@ const ParallaxTest = () => (
             </Responsive>
             <Divider />
             <List id='contact' style={style.list} horizontal>
-                <List.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'><Icon className='contactIcon' color='grey' name='linkedin' size='huge'/></List.Item>
-                <List.Item as='a' href='https://github.com/Kyle-Ski'><Icon className='contactIcon' color='grey' name='github' size='huge' /></List.Item>
+                <List.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/' target='_blank'><Icon className='contactIcon' color='grey' name='linkedin' size='huge'/></List.Item>
+                <List.Item as='a' href='https://github.com/Kyle-Ski' target='_blank'><Icon className='contactIcon' color='grey' name='github' size='huge' /></List.Item>
                 <List.Item as='a' href='mailto:skiroyjenkins@gmail.com'><Icon className='contactIcon' color='grey' name='mail' size='huge' /></List.Item>
                 <List.Item as='a' href='tel: +1-303-374-4256'><Icon className='contactIcon' color='grey' name='phone' size='huge' /></List.Item>
             </List>
