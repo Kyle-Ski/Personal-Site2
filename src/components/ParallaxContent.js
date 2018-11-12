@@ -117,7 +117,7 @@ const ParallaxTest = () => (
                 <iframe title='smaller' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/58e304cb38b42ad2845730c52e4b6517c6722f81/public/img/Resume_almostFinal.pdf&embedded=true" height="500px" width="100%"></iframe>
             </Responsive>
             <Divider />
-            <List style={style.list} horizontal>
+            <List id='contact' style={style.list} horizontal>
                 <List.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'><Icon className='contactIcon' color='grey' name='linkedin' size='huge'/></List.Item>
                 <List.Item as='a' href='https://github.com/Kyle-Ski'><Icon className='contactIcon' color='grey' name='github' size='huge' /></List.Item>
                 <List.Item as='a' href='mailto:skiroyjenkins@gmail.com'><Icon className='contactIcon' color='grey' name='mail' size='huge' /></List.Item>

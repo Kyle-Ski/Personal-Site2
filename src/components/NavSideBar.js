@@ -13,6 +13,14 @@ const style ={
     }, 
     side: {
         borderBottom: 'solid darkgreen 6px'
+    },
+    name: {
+        float: 'right'
+    },
+    contact: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around'
     }
 }
     
@@ -33,6 +41,7 @@ class NavSideBar extends Component {
                 <Sidebar.Pushable as={Segment}>
                     <Button color='black' style={style.card} onClick={this.state.visible ? this.handleHideClick : this.handleShowClick}>
                         <Icon style={style.menu} name='bars' />
+                        <Menu.Item style={style.name}>Kyle Czajkowski</Menu.Item>
                     </Button>
                     <Sidebar
                         as={Menu}
@@ -63,22 +72,24 @@ class NavSideBar extends Component {
                                 <Icon name='file' />
                                 Resume
                             </Menu.Item>
-                            <Menu.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/'>
-                                <Icon name='linkedin' />
-                                LinkedIn
+                            <Menu.Item style={style.contact}>
+                                <Menu.Item as='a' href='https://www.linkedin.com/in/kyle-czajkowski/' target="_blank">
+                                    <Icon name='linkedin' />
+                                    LinkedIn
+                                </Menu.Item>
+                                <Menu.Item as='a' href='https://github.com/Kyle-Ski' target="_blank">
+                                    <Icon name='github' />
+                                    GitHub
+                                </Menu.Item>
+                                <Menu.Item as='a' href="mailto:skiroyjenkins@gmail.com">
+                                    <Icon name='mail' />
+                                    Email
+                                </Menu.Item>
+                                <Menu.Item as='a' href="tel: +1-303-374-4256">
+                                    <Icon name='phone' />
+                                    Cell Phone
+                                </Menu.Item>
                             </Menu.Item>
-                            <Menu.Item as='a' href='https://github.com/Kyle-Ski'>
-                                <Icon name='github' />
-                                GitHub
-                            </Menu.Item>
-                            <Menu.Item as='a' href="mailto:skiroyjenkins@gmail.com">
-                                <Icon name='mail' />
-                                Email
-                            </Menu.Item>
-                            <Menu.Item as='a' href="tel: +1-303-374-4256">
-                                <Icon name='phone' />
-                                Cell Phone
-                            </Menu.Item>                          
                             <Menu.Item disabled={!visible} onClick={this.handleHideClick}>
                                 <Icon name='angle double up' />
                             </Menu.Item>
