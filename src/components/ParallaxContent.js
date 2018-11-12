@@ -21,23 +21,23 @@ const style = {
     }
 }
 const insideStyles = {
-    backgroundColor: "rgba(0, 0, 0, 0.2)",
-    padding: 50,
+    backgroundColor: "rgba(0, 10, 10, 0.5)",
+    padding: 20,
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%,-50%)",
-    borderRadius: "15px",
+    borderRadius: "5%",
     fontSize: "50px",
 };
 const skillStyles = {
-    backgroundColor: "rgba(0, 0, 0, 0.2)",
-    padding: 50,
+    backgroundColor: "rgba(0, 10, 10, 0.5)",
+    padding: 20,
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%,-50%)",
-    borderRadius: "15px",
+    borderRadius: "5%",
     fontSize: "50px",
     color: 'white'
 };
