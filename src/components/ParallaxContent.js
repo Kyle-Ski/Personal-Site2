@@ -111,10 +111,10 @@ const ParallaxTest = () => (
             </Parallax>
             <Divider />
             <Responsive minWidth={768}>
-                <iframe title='desktop' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/58e304cb38b42ad2845730c52e4b6517c6722f81/public/img/Resume_almostFinal.pdf&embedded=true" height="700px" width="75%"></iframe>
+                <iframe title='desktop' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/346c41e607447d3a8145c09c793e7f737b4e6303/public/img/Resume_almostFinal.pdf&embedded=true" height="700px" width="75%"></iframe>
             </Responsive>
             <Responsive maxWidth={767}>
-                <iframe title='smaller' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/58e304cb38b42ad2845730c52e4b6517c6722f81/public/img/Resume_almostFinal.pdf&embedded=true" height="500px" width="100%"></iframe>
+                <iframe title='smaller' id='resume' src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/346c41e607447d3a8145c09c793e7f737b4e6303/public/img/Resume_almostFinal.pdf&embedded=true" height="500px" width="100%"></iframe>
             </Responsive>
             <Divider />
             <List id='contact' style={style.list} horizontal>
