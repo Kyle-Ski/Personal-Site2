@@ -19,13 +19,13 @@ const Projects = () => (
                     <Card.Description>{project.description}</Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                    <a href={project.url} target='_blank'>
+                    <a href={project.url} rel="noopener noreferrer" target='_blank'>
                         <Icon name='world' size='large'/>
                         Live Url
                     </a>
                 </Card.Content>
                 <Card.Content extra>
-                    <a href={project.gitHub} target='_blank'>
+                    <a href={project.gitHub} rel="noopener noreferrer" target='_blank'>
                         <Icon name='github' size='large'/>
                         GitHub Repo
                     </a>        

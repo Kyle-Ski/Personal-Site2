@@ -13,11 +13,12 @@
   flex-wrap: wrap;
 }
 
-.ui.images>.image {
+div.image-group {
   transition: transform .5s;
+  padding: 10px;
 }
 
-.ui.images>.image:hover {
+div.image-group:hover {
   transform: scale(1.3);
 }
 

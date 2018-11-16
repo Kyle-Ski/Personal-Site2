@@ -48,7 +48,7 @@ class NavSideBar extends Component {
                         direction='top'
                         animation='overlay'
                         icon='labeled'
-                        inverted
+                        inverted={true}
                         onHide={this.handleSidebarHide}
                         vertical
                         visible={visible}

@@ -18,6 +18,12 @@ const style = {
         height: '15vh',
         padding: '20px',
         borderTop: 'solid darkgreen 6px'
+    },
+    imageGroup: {
+        display: 'flex', 
+        flexDirection: 'row', 
+        flexWrap: 'wrap', 
+        justifyContent: 'center'
     }
 }
 const insideStyles = {
@@ -90,7 +96,7 @@ const ParallaxTest = () => (
                 <Divider />
                 <Divider />
                 <Header as='h1' dividing>Skills</Header>
-                <Image.Group size='small'>
+                <Image.Group size='small' style={style.imageGroup}>
                     <TechCards />
                 </Image.Group>
                 <Divider />

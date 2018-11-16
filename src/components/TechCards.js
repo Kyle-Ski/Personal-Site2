@@ -1,16 +1,18 @@
 import React from 'react'
-import { Image } from 'semantic-ui-react'
+import { Image, Header } from 'semantic-ui-react'
 import logos from '../data/techData'
 
 const TechCards = () => (
     logos.map((logo, i) => {
         return (
+            <div className='image-group' key={i}>
+            <Header as='h2'>{logo.name}</Header>
             <Image 
                 className='image' 
-                key={i} 
                 src={logo.img} 
-                alt={logo.name}
+                alt={logo.alt}
             />
+            </div>
         )
     })
 )
