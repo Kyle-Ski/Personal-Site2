@@ -56,19 +56,19 @@ class NavSideBar extends Component {
                         position='fixed' 
                         style={style.side}
                     >
-                            <Menu.Item as='a' href='#about-me'>
+                            <Menu.Item as='a' href='#about-me' onClick={this.handleHideClick}>
                                 <Icon name='vcard' />
                                 About Me
                             </Menu.Item>
-                            <Menu.Item as='a' href='#skills'>
+                            <Menu.Item as='a' href='#skills' onClick={this.handleHideClick}>
                                 <Icon name='js square' />
                                 Skills
                             </Menu.Item>
-                            <Menu.Item as='a' href='#projects'>
+                            <Menu.Item as='a' href='#projects' onClick={this.handleHideClick}>
                                 <Icon name='code' />
                                 Projects
                             </Menu.Item>
-                            <Menu.Item as='a' href='#resume'>
+                            <Menu.Item as='a' href='#resume' onClick={this.handleHideClick}>
                                 <Icon name='file' />
                                 Resume
                             </Menu.Item>
