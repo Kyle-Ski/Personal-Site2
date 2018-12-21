@@ -4,7 +4,7 @@ import NavBar from './components/NavBar'
 import NavSideBar from './components/NavSideBar'
 import { Responsive } from 'semantic-ui-react'
 import ParallaxContent from './components/ParallaxContent'
-
+import ScrollButton from './components/ScrollButton'
 
 class SecondApp extends Component {
   render() {
@@ -17,6 +17,7 @@ class SecondApp extends Component {
         <Responsive maxWidth={767}>
           <NavSideBar />
         </Responsive>
+        <ScrollButton scrollStepInPx="150" delayInMs="10.66"/>
       </div>
     );
   }

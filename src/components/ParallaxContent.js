@@ -33,7 +33,7 @@ const insideStyles = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%,-50%)",
-    borderRadius: "5%",
+    borderRadius: "5px",
     fontSize: "50px",
 };
 const skillStyles = {
