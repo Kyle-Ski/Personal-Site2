@@ -75,5 +75,12 @@
         "icon": "server", 
         "description": "Back-End",
         "alt": "Restful API"
+    },
+    {
+        "name": "", 
+        "img": "/img/TF_JS_lockup.png", 
+        "icon": "server", 
+        "description": "Front/Back",
+        "alt": "Tensorflow"
     }
 ]

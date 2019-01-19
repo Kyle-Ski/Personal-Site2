@@ -52,6 +52,11 @@ div.image-group:hover {
   margin: 10px;
 }
 
+.ui.image.Tensorflow{
+  width: auto !important;
+  height: 100px !important;
+}
+
 .ui.cards>.card {
   transition: transform .2s;
   margin: 15px;

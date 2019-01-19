@@ -8,7 +8,7 @@ const TechCards = () => (
             <div className='image-group' key={i}>
             <Header as='h2'>{logo.name}</Header>
             <Image 
-                className='image' 
+                className={`image ${logo.alt}`} 
                 src={logo.img} 
                 alt={logo.alt}
             />
