@@ -4,13 +4,13 @@
 }
 
 .main {
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-.ui.top.fixed.menu{
-  background-color:#1B1C1C;
+.ui.top.fixed.menu {
+  background-color: #1b1c1c;
   width: 100%;
-  border-bottom: solid rgba(255, 255, 255, 0) .1px;
+  border-bottom: solid rgba(255, 255, 255, 0) 0.1px;
 }
 
 .technologies {
@@ -20,11 +20,11 @@
 }
 
 div.image-group {
-  transition: transform .5s;
+  transition: transform 0.5s;
   padding: 10px;
 }
 
-h1.ui.dividing.header{
+h1.ui.dividing.header {
   border-radius: 50px;
 }
 
@@ -33,7 +33,7 @@ div.image-group:hover {
 }
 .scroll {
   opacity: 0.5;
-  background-color: #6B747D;
+  background-color: #6b747d;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -41,24 +41,27 @@ div.image-group:hover {
   right: 10px;
   border-radius: 5px;
   border: none;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-.scroll:hover{
+.scroll:hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-.ui.small.image, .ui.small.images .image, .ui.small.images img, .ui.small.images svg {
+.ui.small.image,
+.ui.small.images .image,
+.ui.small.images img,
+.ui.small.images svg {
   margin: 10px;
 }
 
-.ui.image.Tensorflow{
+.ui.image.Tensorflow {
   width: auto !important;
   height: 100px !important;
 }
 
-.ui.cards>.card {
-  transition: transform .2s;
+.ui.cards > .card {
+  transition: transform 0.2s;
   margin: 15px;
 }
 
@@ -71,26 +74,78 @@ div.image-group:hover {
   transform: scale(1.1);
 }
 
-.ui.horizontal.list>.item>i.icon {
-  transition: transform .2s;
+.ui.horizontal.list > .item > i.icon {
+  transition: transform 0.2s;
 }
 
-.ui.horizontal.list>.item>i.icon:hover {
+.ui.horizontal.list > .item > i.icon:hover {
   transform: scale(1.5);
 }
 
 .about-me {
   padding: 40px;
 }
+#about-me {
+  height: 90vh;
+}
+#about-header {
+  background-color: rgba(0, 10, 10, 0.5);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+#skills {
+  min-height: 50vh;
+}
+
+.skills-img {
+  height: 500px;
+}
+
+#skills-header {
+  background-color: rgba(0, 10, 10, 0.5);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  font-size: 50px;
+  color: white;
+}
 
 .myName {
   float: right;
 }
 
-.ui.medium.image{
+.img-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ui.medium.image {
   border-radius: 5%;
 }
 
+.bottom-list {
+  background-color: black;
+  width: 100vw;
+  height: 15vh;
+  padding: 20px !important;
+  border-top: solid darkgreen 6px;
+}
+
+.parallax-cont {
+  font-family: sans-serif;
+  text-align: center;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -101,7 +156,7 @@ div.image-group:hover {
   }
 }
 
-@media (min-width: 300px){
+@media (min-width: 300px) {
   .page-body {
     margin-top: 10vh;
     display: flex;
@@ -118,7 +173,7 @@ div.image-group:hover {
     height: auto;
   }
 
-  .ui.medium.image{
+  .ui.medium.image {
     max-width: 100%;
     height: 100%;
     padding: 10px;
@@ -129,19 +184,19 @@ div.image-group:hover {
   .paragraphs {
     padding: 1px;
     font-size: x-large;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
   }
 
   .profile {
     display: flex;
     flex-direction: column;
   }
-h1.ui.header {
+  h1.ui.header {
     text-align: center;
   }
 }
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
   .page-body {
     display: flex;
     flex-direction: row;
@@ -166,7 +221,7 @@ h1.ui.header {
   }
 }
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
   .page-body {
     display: flex;
     flex-direction: row;
@@ -186,7 +241,7 @@ h1.ui.header {
   }
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1100px) {
   .page-body {
     display: flex;
     flex-direction: row;
@@ -195,7 +250,7 @@ h1.ui.header {
     margin-top: 20vh;
   }
 
-  .ui.cards>.card {
+  .ui.cards > .card {
     width: 30vw;
     height: auto;
   }
@@ -211,7 +266,7 @@ h1.ui.header {
   }
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1300px) {
   .page-body {
     display: flex;
     flex-direction: row;
@@ -220,7 +275,7 @@ h1.ui.header {
     margin-top: 20vh;
   }
 
-  .ui.cards>.card {
+  .ui.cards > .card {
     width: 30vw;
     height: auto;
   }

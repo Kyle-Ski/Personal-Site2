@@ -10,63 +10,22 @@ import {
   List,
   Container
 } from "semantic-ui-react"
+
 import TechCards from "./TechCards"
 import Projects from "./Projects"
 
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-}
-const style = {
-  innerParallax: {
-    minHeight: "50vh"
-  },
-  list: {
-    backgroundColor: "black",
-    width: "100vw",
-    height: "15vh",
-    padding: "20px",
-    borderTop: "solid darkgreen 6px"
-  },
-  imageGroup: {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center"
-  }
-}
-const insideStyles = {
-  backgroundColor: "rgba(0, 10, 10, 0.5)",
-  padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)",
-  borderRadius: "5px",
-  fontSize: "50px"
-}
-const skillStyles = {
-  backgroundColor: "rgba(0, 10, 10, 0.5)",
-  padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)",
-  borderRadius: "5%",
-  fontSize: "50px",
-  color: "white"
-}
 const image2 = "/img/elbertTop.jpg"
 const image3 = "/img/greenMountains.jpg"
 const image4 = "/img/theSpot.jpg"
 const image5 = "/img/knexBackend.png"
 const headshot = "/img/Profile.jpg"
+
 const ParallaxTest = () => (
   <div>
-    <div style={styles}>
+    <div className="parallax-cont">
       <Parallax bgImage={image2} strength={600}>
-        <div id="about-me" style={{ height: "90vh" }}>
-          <Header as="h1" style={insideStyles} dividing>
+        <div id="about-me">
+          <Header id="about-header" as="h1" dividing>
             About Me
           </Header>
         </div>
@@ -101,33 +60,33 @@ const ParallaxTest = () => (
         </div>
       </Container>
       <Parallax bgImage={image4} strength={500}>
-        <div style={{ height: 500 }}>
-          <Header style={skillStyles}>Skills</Header>
+        <div className="skills-img">
+          <Header id="skills-header">Skills</Header>
         </div>
       </Parallax>
-      <div id="skills" style={style.innerParallax}>
+      <div id="skills">
         <Divider />
         <Divider />
         <Header as="h1" dividing>
           Skills
         </Header>
-        <Image.Group size="small" style={style.imageGroup}>
+        <Image.Group size="small" className="img-group">
           <TechCards />
         </Image.Group>
         <Divider />
         <Divider />
       </div>
       <Parallax bgImage={image5} strength={500}>
-        <div style={{ height: 500 }}>
-          <Header style={skillStyles}>Projects</Header>
+        <div className="skills-img">
+          <Header id="skills-header">Projects</Header>
         </div>
       </Parallax>
       <Card.Group id="projects" centered>
         <Projects />
       </Card.Group>
       <Parallax bgImage={image3} strength={500}>
-        <div style={{ height: 500 }}>
-          <Header style={insideStyles}>Resume</Header>
+        <div className="skills-img">
+          <Header id="skills-header">Resume</Header>
         </div>
       </Parallax>
       <Divider />
@@ -150,7 +109,7 @@ const ParallaxTest = () => (
         />
       </Responsive>
       <Divider />
-      <List id="contact" style={style.list} horizontal>
+      <List id="contact" className="bottom-list" horizontal>
         <List.Item
           as="a"
           href="https://www.linkedin.com/in/kyle-czajkowski/"

@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
-import NavBar from './components/NavBar'
-import NavSideBar from './components/NavSideBar'
-import { Responsive } from 'semantic-ui-react'
-import ParallaxContent from './components/ParallaxContent'
-import ScrollButton from './components/ScrollButton'
+import React, { Component } from "react"
+import "./App.css"
+import NavBar from "./components/NavBar"
+import NavSideBar from "./components/NavSideBar"
+import { Responsive } from "semantic-ui-react"
+import ParallaxContent from "./components/ParallaxContent"
+import ScrollButton from "./components/ScrollButton"
 
 class SecondApp extends Component {
   render() {
     return (
-      <div className='main'>
+      <div className="main">
         <Responsive minWidth={768}>
           <NavBar />
           <ParallaxContent />
@@ -17,10 +17,10 @@ class SecondApp extends Component {
         <Responsive maxWidth={767}>
           <NavSideBar />
         </Responsive>
-        <ScrollButton scrollStepInPx="150" delayInMs="10.66"/>
+        <ScrollButton scrollStepInPx="150" delayInMs="10.66" />
       </div>
-    );
+    )
   }
 }
 
-export default SecondApp;
+export default SecondApp
