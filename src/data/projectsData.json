@@ -1,5 +1,13 @@
 [
   {
+    "creation": "Febuary 2019",
+    "img": "/img/RandomPicChrome.png",
+    "name": "Google Chrome Extension",
+    "url": "https://chrome.google.com/webstore/detail/random-nasa-pic-of-the-da/omhdoabhgjjhaecjkccomlimagpbfben",
+    "gitHub": "https://github.com/Kyle-Ski/NASApicOfTheDay",
+    "description": "An extension I created for Google Chrome (Available on the Chrome Web Store). When you open a new tab, you are greeted with a random picture from NASA's Picture of the Day archive. It displays the title, date, and description of the image. There is also an option to download the HD version of the image."
+  },
+  {
     "creation": "January 2019",
     "img": "/img/Packr.png",
     "name": "Machine Learning Packing Tool",
