@@ -1,7 +1,15 @@
 [
   {
+    "creation": "April 2019",
+    "img": "/img/Dynamic.gif",
+    "name": "react-dynamic-input",
+    "url": "https://www.npmjs.com/package/react-dynamic-input",
+    "gitHub": "https://github.com/Kyle-Ski/react-dynamic-input",
+    "description": "A published NPM package that allows users to dynamically create multiple input boxes with a variety of options that developers can customize such as button text, tooltips and more."
+  },
+  {
     "creation": "Febuary 2019",
-    "img": "/img/RandomPicChrome.png",
+    "img": "/img/RandomNasa.gif",
     "name": "Google Chrome Extension",
     "url": "https://chrome.google.com/webstore/detail/random-nasa-pic-of-the-da/omhdoabhgjjhaecjkccomlimagpbfben",
     "gitHub": "https://github.com/Kyle-Ski/NASApicOfTheDay",
@@ -31,14 +39,7 @@
     "gitHub": "https://github.com/Kyle-Ski/Floerke-Media",
     "description": "A website built for a Math and Science tutor. The site will allow students or parents to contact the teacher by sending an automated Email. The site also will have recources for the students to use."
   },
-  {
-    "creation": "September 2018",
-    "img": "/img/Bookstore.png",
-    "name": "React Bookstore",
-    "url": "http://greedy-drink.surge.sh/",
-    "gitHub": "https://github.com/Kyle-Ski/Bookstore",
-    "description": "My first React App. Created to work like a shopping cart for a bookstore with search functionality. Technologies: React, CSS, JavaScript, HTML"
-  },
+
   {
     "creation": "October 2018",
     "img": "/img/ExpressServer.png",
