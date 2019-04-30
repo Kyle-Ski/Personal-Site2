@@ -94,7 +94,7 @@ const ParallaxTest = () => (
         <iframe
           title="desktop"
           id="resume"
-          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/94363048e2973ca81f6006b5c504ba788cb59404/src/1Resume.pdf&embedded=true"
+          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/e2c8f7b57216410bb3906f6e9e36d44a27bb465c/src/1Resume.pdf&embedded=true"
           height="700px"
           width="75%"
         />
@@ -103,7 +103,7 @@ const ParallaxTest = () => (
         <iframe
           title="smaller"
           id="resume"
-          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/94363048e2973ca81f6006b5c504ba788cb59404/src/1Resume.pdf&embedded=true"
+          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/e2c8f7b57216410bb3906f6e9e36d44a27bb465c/src/1Resume.pdf&embedded=true"
           height="500px"
           width="100%"
         />
