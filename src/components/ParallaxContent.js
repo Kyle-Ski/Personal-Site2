@@ -18,7 +18,7 @@ const image2 = "/img/elbertTop.jpg"
 const image3 = "/img/greenMountains.jpg"
 const image4 = "/img/theSpot.jpg"
 const image5 = "/img/knexBackend.png"
-const headshot = "/img/Profile.jpg"
+const headshot = "/img/Me.jpg"
 
 const ParallaxTest = () => (
   <div>
