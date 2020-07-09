@@ -85,7 +85,7 @@ const ParallaxTest = () => (
       </Card.Group>
       <Parallax bgImage={image3} strength={500}>
         <div id="resume" className="skills-img">
-          <a href="../Resume_july_2020.pdf" download><Header id="skills-header">Resume <Icon fitted name="download" size="big" /></Header></a>
+          <a href="./img/Resume_july_2020.pdf" download><Header id="skills-header">Resume <Icon fitted name="download" size="big" /></Header></a>
         </div>
       </Parallax>
       
