@@ -21,7 +21,7 @@ class NavBar extends Component {
     return (
       <div className="ui top fixed menu">
         <Segment inverted style={style.nav}>
-          <Menu massive inverted>
+          <Menu massive={true.toString()} inverted>
             <Menu.Item
               name="About Me"
               active={activeItem === "About Me"}
@@ -46,7 +46,7 @@ class NavBar extends Component {
               onClick={this.handleItemClick}
               href="#resume"
             />
-            <Dropdown inverted item text="Contact">
+            <Dropdown inverted={true.toString()} item text="Contact">
               <Dropdown.Menu>
                 <Dropdown.Item href="https://github.com/Kyle-Ski">
                   <Icon name="github" />
