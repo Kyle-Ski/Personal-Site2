@@ -1,7 +1,6 @@
 import React from "react"
 import { Parallax } from "react-parallax"
 import {
-  Responsive,
   Card,
   Header,
   Image,
@@ -85,29 +84,11 @@ const ParallaxTest = () => (
         <Projects />
       </Card.Group>
       <Parallax bgImage={image3} strength={500}>
-        <div className="skills-img">
-          <Header id="skills-header">Resume</Header>
+        <div id="resume" className="skills-img">
+          <a href="../Resume_july_2020.pdf" download><Header id="skills-header">Resume <Icon fitted name="download" size="big" /></Header></a>
         </div>
       </Parallax>
-      <Divider />
-      <Responsive minWidth={768}>
-        <iframe
-          title="desktop"
-          id="resume"
-          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/d81e75a6d8daa97d80094aa414acac501afdf3b4/src/Resume%20_%20july%20_2020%20copy.pdf&embedded=true"
-          height="700px"
-          width="75%"
-        />
-      </Responsive>
-      <Responsive maxWidth={767}>
-        <iframe
-          title="smaller"
-          id="resume"
-          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Kyle-Ski/Personal-Site2/d81e75a6d8daa97d80094aa414acac501afdf3b4/src/Resume%20_%20july%20_2020%20copy.pdf&embedded=true"
-          height="500px"
-          width="100%"
-        />
-      </Responsive>
+      
       <Divider />
       <List id="contact" className="bottom-list" horizontal>
         <List.Item
