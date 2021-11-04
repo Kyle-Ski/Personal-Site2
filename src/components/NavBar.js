@@ -52,17 +52,13 @@ class NavBar extends Component {
                   <Icon name="github" />
                   GitHub
                 </Dropdown.Item>
-                <Dropdown.Item href="mailto:skiroyjenkins@gmail.com">
+                <Dropdown.Item href="mailto:Kyle.Czajkowski.Ski@gmail.com">
                   <Icon name="mail" />
-                  skiroyjenkins@gmail.com
+                  Kyle.Czajkowski.Ski@gmail.com
                 </Dropdown.Item>
                 <Dropdown.Item href="https://www.linkedin.com/in/kyle-czajkowski/">
                   <Icon name="linkedin" />
                   LinkedIn
-                </Dropdown.Item>
-                <Dropdown.Item href="tel: +1-303-374-4256">
-                  <Icon name="phone" />
-                  Cell Phone
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

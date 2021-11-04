@@ -90,5 +90,12 @@
     "icon": "server",
     "description": "Front/Back",
     "alt": "Tensorflow"
+  },
+  {
+    "name": "",
+    "img": "/img/Android-Logo.png",
+    "icon": "server",
+    "description": "Mobile",
+    "alt": "Android Icon"
   }
 ]
