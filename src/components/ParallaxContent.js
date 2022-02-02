@@ -104,7 +104,7 @@ const ParallaxTest = () => (
             size="huge"
           />
         </List.Item>
-        <List.Item as="a" href="mailto:Kyle.Czajkowski.Ski@gmail.com">
+        <List.Item as="a" href="mailto:kyle@czajkowski.tech">
           <Icon className="contactIcon" color="grey" name="mail" size="huge" />
         </List.Item>
       </List>
