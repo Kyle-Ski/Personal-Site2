@@ -52,9 +52,9 @@ class NavBar extends Component {
                   <Icon name="github" />
                   GitHub
                 </Dropdown.Item>
-                <Dropdown.Item href="mailto:Kyle.Czajkowski.Ski@gmail.com">
+                <Dropdown.Item href="mailto:kyle@czajkowski.tech">
                   <Icon name="mail" />
-                  Kyle.Czajkowski.Ski@gmail.com
+                  Kyle@czajkowski.tech
                 </Dropdown.Item>
                 <Dropdown.Item href="https://www.linkedin.com/in/kyle-czajkowski/">
                   <Icon name="linkedin" />
