@@ -94,13 +94,9 @@ class NavSideBar extends Component {
                 <Icon name="github" />
                 GitHub
               </Menu.Item>
-              <Menu.Item as="a" href="mailto:skiroyjenkins@gmail.com">
+              <Menu.Item as="a" href="mailto:kyle@czajkowski.tech">
                 <Icon name="mail" />
                 Email
-              </Menu.Item>
-              <Menu.Item as="a" href="tel: +1-303-374-4256">
-                <Icon name="phone" />
-                Cell Phone
               </Menu.Item>
             </Menu.Item>
             <Menu.Item disabled={!visible} onClick={this.handleHideClick}>
